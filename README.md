@@ -1,5 +1,5 @@
-# czy-study-ml-py 2018-07-13
-czy study Machine Learning 
+# czy-study-py-ml-deeolearing 2018-07-13
+czy study Machine Learning and Deeolearing
 
 ## 本库初衷
     1、有次做项目简单的用到NLP（自然语言处理）相关技术、就突然对NLP（自然语言处理）技术很感兴趣。
