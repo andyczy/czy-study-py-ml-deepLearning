@@ -5,11 +5,11 @@ czy study Machine Learning
     1、有次做项目简单的用到NLP（自然语言处理）相关技术、就突然对NLP（自然语言处理）技术很感兴趣。
     本科的数学等知识都忘记差不多了，很有挑战性！加油！
     
-    2、记录自己学习深度学习、NLP（自然语言处理）的过程。
+    2、记录自己学习机器、深度学习算法、NLP（自然语言处理）和 tensorflow框架的笔记。
 
-    3、学习更有深度的知识！
+    3、天道酬勤
  
-![](https://github.com/andyczy/czy-study-python/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
+![](https://github.com/andyczy/czy-study-deepLearning/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
 ## 学习资料
 ### [友情链接与文献](https://github.com/andyczy/czy-study-ml-nlp-py)
     jieba “结巴”中文分词：做最好的 Python 中文分词组件。
