@@ -37,5 +37,5 @@ czy study Machine Learning
     Author: chenzhengyou
     mail: 649954910@qq.com
 
-![](https://github.com/andyczy/czy-study-python/blob/master/weixin.jpg "有你的支持、我更加努力！")
+![](https://github.com/andyczy/czy-study-deepLearning/blob/master/vxz.jpg "有你的支持、我更加努力！")
 
