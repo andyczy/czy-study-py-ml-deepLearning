@@ -1,0 +1,14 @@
+StringIO
+    数据读写也可能不一定是文件、也可以在内存中读写、在内存中读写字符串
+    StringIO经常被用来作字符串的缓存，因为StringIO的一些接口和文件操作是一致的，也就是说同样的代码，可以同时当成文件操作或者StringIO操作。
+        from  io  improt StringIO
+        o = StringIO()
+        o.write('hello word chenzhengyou')
+        pront(o.getvalue())  读取值
+
+BytsIO
+    字节码
+        from  io  improt BytsIO
+        o = BytsIO()
+        o.write('陈郑游'.encode('utf-8'))
+        pront(o.getvalue())  读取值

@@ -1,0 +1,11 @@
+SQLite 是一种嵌入式数据库、它的数据库就是一个文件。是C语言编写的、体积小。
+
+MySQL 安装驱动、导入驱动、使用驱动
+        pip install MySQL-connector
+        import mysql.connector
+
+
+# MySQLdb只支持Python2.*，还不支持3.*,可以用PyMySQL代替。
+# 安装方法：pip install PyMySQL
+import pymysql
+pymysql.install_as_MySQLdb()

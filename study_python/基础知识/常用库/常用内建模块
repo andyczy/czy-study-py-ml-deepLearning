@@ -1,0 +1,20 @@
+时间          datatime
+集合          collections
+base64       看源码 
+struct       bytes与二进制转换
+hashlib      摘要算法（哈希、散列算法）
+hmac         验证算法有效性
+itertools    操作迭代对象的函数
+contectlib   资源关闭
+urllib       提高URL操作
+————> requests
+xml          操作xml
+HTMLParser   解析html
+Pillow       操作图像
+chardet      处理字符串编码
+psutil       获取系统信息
+
+
+
+
+

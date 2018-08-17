@@ -1,0 +1,17 @@
+文件读写
+—— 读取文本文件
+    r 表示读
+    o = open('文件地址','r')   读取编码文件可加参数，如gkb编码： encoding='gbk'
+    o.read()
+    o.close()
+—— 读取二进制文件
+    o = open('文件地址','rb')
+
+
+—— 写文本文件
+    r 表示读
+    o = open('文件地址','w')   写入特定编码文件可加参数，如gkb编码： encoding='gbk'
+    o.write('hello word chenzhengyou')
+    o.close()
+
+—— a 是追加

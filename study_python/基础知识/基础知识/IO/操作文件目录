@@ -1,0 +1,9 @@
+内置 os 模块
+import os
+# 查看当前路径
+os.path.abspath('.')
+# 创建目录
+os.path.join('/user','helloDir')
+os.mkdir('/user/helloDir')
+# 删除目录
+os.rmdir('/user/helloDir')
