@@ -8,10 +8,9 @@ czy study Machine Learning
     2、记录自己学习机器、深度学习算法、NLP（自然语言处理）和 tensorflow框架的笔记。
 
     3、天道酬勤
- 
+
 ![](https://github.com/andyczy/czy-study-deepLearning/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
-## 学习资料
-### [友情链接与文献](https://github.com/andyczy/czy-study-ml-nlp-py)
+## 学习资料与文献
     jieba “结巴”中文分词：做最好的 Python 中文分词组件。
     [Github](https://github.com/fxsjy/jieba)
     
@@ -33,7 +32,7 @@ czy study Machine Learning
 
     (炼数成金-深度学习框架Tensorflow学习与应用)[https://www.bilibili.com/video/av20542427/]
 
-# 如果喜欢，支持一下哈
+## 如果喜欢，支持一下哈
     Author: chenzhengyou
     mail: 649954910@qq.com
 
