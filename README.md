@@ -1,4 +1,4 @@
-# czy-study-py-ml-deepLearning 2018-07-13
+# czy-study-py-ml-deepLearning
 czy study Machine Learning and deepLearning
 
 ## 本库初衷
