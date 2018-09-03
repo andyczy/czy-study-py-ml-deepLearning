@@ -2,7 +2,7 @@
  
 ## 说明
     1、使用study_scarpy作为项目根目录才能不会报错。
-    
+    ![](https://github.com/andyczy/czy-study-py-ml-deepLearning/blob/master/study_scarpy/%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E.png)
     
  
 ## 如果喜欢，支持一下哈
