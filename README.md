@@ -23,6 +23,7 @@ czy study Machine Learning and deepLearning
 
 
 ## 学习资料与文献
+#### NLP相关推荐
     jieba “结巴”中文分词：做最好的 Python 中文分词组件。
     [Github](https://github.com/fxsjy/jieba)
     
@@ -43,6 +44,12 @@ czy study Machine Learning and deepLearning
     (中文网)(http://www.tensorfly.cn/)   (英文网)[https://www.tensorflow.org/]
 
     (炼数成金-深度学习框架Tensorflow学习与应用)[https://www.bilibili.com/video/av20542427/]
+
+#### Python 相关推荐
+    (scrapy 官网)[https://scrapy.org/]
+
+    (scrapy 中文教程)[https://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html]
+
 
 ## 如果喜欢，支持一下哈
     Author: chenzhengyou
