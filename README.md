@@ -10,7 +10,17 @@ czy study Machine Learning and deepLearning
 
     4、记录学习机器、深度学习算法。
 
+
+## 目录介绍
+    1、study_python         学习Python知识点    [开始时间：2017-12-22]
+    2、study_scarpy         学习scarpy爬虫框架  [开始时间：2018-09-03]
+    3、study_ml             学习NLP、机器、深度学习算法相关 [开始时间：2018-07-16]
+    4、study_tensorflow     tensorflow 学习应用 [开始时间：2018-07-16]
+
+
 ![](https://github.com/andyczy/czy-study-deepLearning/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
+
+
 ## 学习资料与文献
     jieba “结巴”中文分词：做最好的 Python 中文分词组件。
     [Github](https://github.com/fxsjy/jieba)
