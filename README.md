@@ -13,8 +13,8 @@ czy study Machine Learning and deepLearning
 
 ## 目录介绍
     1、study_python         学习Python知识点                              [开始时间：2017-12-22]
-    2、study_ml             学习NLP、机器、深度学习算法相关                 [开始时间：2018-07-16]
-    3、study_tensorflow     tensorflow 学习应用                           [开始时间：2018-07-16]
+    2、study_ml             学习NLP、机器、深度学习算法相关                 [开始时间：2018-07-13]
+    3、study_tensorflow     tensorflow 学习应用                           [开始时间：2018-07-13]
     4、study_scarpy         学习scarpy爬虫框架                             [开始时间：2018-09-03]
     
 
