@@ -2,11 +2,13 @@
 czy study Machine Learning and deepLearning
 
 ## 本库初衷
-    1、有次做项目简单的用到NLP（自然语言处理）相关技术、就突然对自然语言处理技术很感兴趣。
+    1、有次做项目简单的用到NLP（自然语言处理）相关技术、就突然对自然语言处理技术很感兴趣；
     
-    2、记录自己学习机器、深度学习算法、NLP（自然语言处理）和 tensorflow框架的笔记(python库也搬过来了)。
+    2、记录学习研究的方向NLP（自然语言处理）、tensorflow框架的笔记；
 
-    3、天道酬勤
+    3、记录学习Python语言、Python相关爬虫框架知识；
+
+    4、记录学习机器、深度学习算法。
 
 ![](https://github.com/andyczy/czy-study-deepLearning/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
 ## 学习资料与文献
