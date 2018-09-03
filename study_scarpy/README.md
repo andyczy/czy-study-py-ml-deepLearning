@@ -1,6 +1,6 @@
 # czy-study-scarpy
  
-## 说明
+## 目录结构说明
 1、使用study_scarpy作为项目根目录才能不会报错。
 ![](https://github.com/andyczy/czy-study-py-ml-deepLearning/blob/master/study_scarpy/mulu.png)
     
