@@ -43,4 +43,16 @@ class JobboleSpider(scrapy.Spider):
         else:
             fav_nums = 0
 
+        comment_nums = response.css("a[href='#article-comment'] span::text").extract()[0]
+        match_re = re.match(".*?(\d+).*", comment_nums)
+        if match_re:
+            comment_nums = int(match_re.group(1))
+        else:
+            comment_nums = 0
+        
+        content = response.css("div.entry").extract()[0]
+        
+        tag_list = response.css("p.entry-meta-hide-on-mobile a::text").extract()
+        tag_list = [element for element in tag_list if not element.strip().endswith("评论")]
+        tags = ",".join(tag_list)
         pass
