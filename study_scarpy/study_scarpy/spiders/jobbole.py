@@ -30,4 +30,17 @@ class JobboleSpider(scrapy.Spider):
         tag_list = response.xpath("//p[@class='entry-meta-hide-on-mobile']/a/text()").extract()
         tag_list = [element for element in tag_list if not element.strip().endswith("评论")]
         tags = ",".join(tag_list)
+
+        #通过css选择器提取字段
+        front_image_url = response.meta.get("front_image_url", "")  #文章封面图
+        title = response.css(".entry-header h1::text").extract()[0]
+        create_date = response.css("p.entry-meta-hide-on-mobile::text").extract()[0].strip().replace("·","").strip()
+        praise_nums = response.css(".vote-post-up h10::text").extract()[0]
+        fav_nums = response.css(".bookmark-btn::text").extract()[0]
+        match_re = re.match(".*?(\d+).*", fav_nums)
+        if match_re:
+            fav_nums = int(match_re.group(1))
+        else:
+            fav_nums = 0
+
         pass
