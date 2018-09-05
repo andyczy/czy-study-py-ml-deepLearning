@@ -1,4 +1,4 @@
-#  chenzy python 2018-07-10 采集房产信息
+#  chenzy python 2018-07-10 词法分析采集房产信息
 
 #  需求分析：
     1、爬取海南房产网[http://www.home898.com]官网下,（三亚市）[http://sanya.home898.com/]下的（三亚热销楼盘）房产动态信息。
@@ -12,7 +12,7 @@
         #  第一步：网站分析    【已完成-》2018-07-10】
         #  第二步：采集清洗    【已完成-》2018-07-11】
         #  第三步：数据存储    【已完成-》2018-07-11】
-        #  第四步：数据展示    【未完成】
+        #  第四步：数据展示    【已完成-》Javaweb】
 
 #  程序说明：
 #### 一、普通采集
@@ -31,6 +31,7 @@
     执行分页获取[2018-07-12下午]
     特殊说明：本程序可采集海南房产网下的各个城市楼盘动态信息;[2018-07-12上午]
     nlp jieba 分词处理[目的：处理特殊名词]
+    添加模型，强制性添加关键词
 
 
 
@@ -41,5 +42,6 @@
     Author: chenzhengyou
     mail: 649954910@qq.com
 
-![](https://github.com/andyczy/czy-study-python/blob/master/weixin.jpg "有你的支持、我更加努力！")
+![](https://github.com/andyczy/czy-study-deepLearning/blob/master/vxz.jpg "有你的支持、我更加努力！")
+
 
