@@ -16,6 +16,7 @@ czy study Machine Learning and deepLearning
     2、study_ml             学习NLP、机器、深度学习算法相关      [开始时间：2018-07-13]       继续学习
     3、study_tensorflow     tensorflow 学习应用                [开始时间：2018-07-13]       继续学习
     4、study_scarpy         学习scarpy爬虫框架                  [开始时间：2018-09-03]       继续学习
+    5、study_flask          python web框架                     不是主要学习方向、web有Java开发
     
 
 
