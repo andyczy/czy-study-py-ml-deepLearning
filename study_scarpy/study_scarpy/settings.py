@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import os
+
 # Scrapy settings for study_scarpy project
 #
 # For simplicity, this file contains only settings considered important or
@@ -64,9 +66,21 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'study_scarpy.pipelines.StudyScarpyPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    # 系统默认
+    # 'scrapy.pipelines.images.ImagesPipeline': 1,
+    # 自定义
+    'study_scarpy.pipelines.JsonWithEncodingPipeline': 1,
+    'study_scarpy.pipelines.ArticleImagePipeline': 2,
+   #  'study_scarpy.pipelines.MysqlTwistedPipline': 5,
+    # 'study_scarpy.pipelines.ElasticSearchPipeline': 5
+
+}
+# 保存图片的字段名称
+IMAGES_URLS_FIELD = "front_image_url"
+project_dir = os.path.abspath(os.path.dirname(__file__))
+# 保存路径
+IMAGES_STORE = os.path.join(project_dir, 'images')
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
