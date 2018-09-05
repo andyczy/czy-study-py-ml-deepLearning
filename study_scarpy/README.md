@@ -8,7 +8,7 @@
     知乎爬虫案例、伯乐爬虫案例 
     1、通过xpath提取
     2、通过css提取
-    3、items、字典、 item loader的使用
+    3、items、字典、 item loader的使用（推荐使用item loader）
     4、pinelines 使用
     5、scarpy settings配置文件的使用
     6、图片下载本地
