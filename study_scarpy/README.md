@@ -1,8 +1,8 @@
 # czy-study-scarpy
  
-## 目录结构说明（使用study_scarpy作为项目根目录才能不会报错）
+## 目录结构说明
 ![](https://github.com/andyczy/czy-study-py-ml-deepLearning/blob/master/study_scarpy/mulu.png)
-    
+（使用study_scarpy作为项目根目录才能不会报错） 
 
 ## 基础知识
     知乎爬虫案例、伯乐爬虫案例 
