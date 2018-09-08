@@ -16,5 +16,4 @@ def jiebaCut(path,textFile):
     lists =  "ღ".join(seg_list).split("ღ")
     # print("——》  开始分词采集逻辑  《——") 
     return lists
-
- 
+print("hi")
