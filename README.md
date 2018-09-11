@@ -14,11 +14,11 @@ czy study Machine Learning and deepLearning
 
 ## 目录介绍
 
-    1、study_python         学习Python知识点                   [开始时间：2017-12-22]       够用
-    2、study_ml             学习NLP、机器、深度学习算法相关      [开始时间：2018-07-13]       继续学习
-    3、study_tensorflow     tensorflow 学习应用                [开始时间：2018-07-13]       继续学习
-    4、study_scarpy         学习scarpy爬虫框架                  [开始时间：2018-09-03]       继续学习
-    5、study_flask          python web框架                     不是主要学习方向、web有Java开发
+    1、study_python         学习Python知识点                   [开始时间：2017-12-22]         够用
+    2、study_flask          python web框架                     [开始时间：2018-08-12]        不是研究方向
+    3、study_scarpy         学习scarpy爬虫框架                 [开始时间：2018-09-03]         继续学习
+    4、study_ml             学习NLP、机器、深度学习算法相关      [开始时间：2018-07-13]        继续学习
+    5、study_tensorflow     tensorflow 学习应用                [开始时间：2018-07-13]         继续学习
 
 ![](https://github.com/andyczy/czy-study-deepLearning/blob/master/tensors_flowing.gif "什么是数据流图（Data Flow Graph）?")
 
