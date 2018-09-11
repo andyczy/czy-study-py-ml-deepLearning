@@ -4,7 +4,7 @@ czy study Machine Learning and deepLearning
 
 ## 本库初衷
 
-    1、有次做项目简单的用到NLP（自然语言处理）相关技术、就突然对自然语言处理技术很感兴趣；
+    1、对技术的兴趣；
 
     2、记录学习研究的方向NLP（自然语言处理）、tensorflow框架的笔记；
 
