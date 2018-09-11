@@ -16,10 +16,14 @@
 ## 进阶知识
     1、Scrapy模拟登陆、Scrapy突破反爬虫的限制（没学）
 
+#### Python 相关推荐
+    (scrapy 官网)[https://scrapy.org/]
+    (scrapy github)[https://github.com/scrapy/scrapy]
 
 ## 如果喜欢，支持一下哈
     Author: chenzhengyou
     mail: 649954910@qq.com
 
 ![](https://github.com/andyczy/czy-study-deepLearning/blob/master/vxz.jpg "有你的支持、我更加努力！")
+
 

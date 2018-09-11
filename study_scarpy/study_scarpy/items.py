@@ -47,6 +47,8 @@ def get_nums(value):
     else:
         nums = 0
     return nums
+
+    
 # 字典
 class JobBoleArticleItem(scrapy.Item):
     title = scrapy.Field()
@@ -90,3 +92,35 @@ class JobBoleArticleItem(scrapy.Item):
     #               fron_image_url, self["front_image_path"], self["praise_nums"], self["comment_nums"],
     #               self["tags"], self["content"])
     #     return insert_sql, params
+
+寿司店（林旺）
+由于资金不足、只能考虑夜市（位置）。
+
+寿司饮食文化：
+1、以简单为美味，以自然为美味。
+
+第一：市场
+1、寿司店林旺（藤桥）没有。
+2、产品成本低，收入高。
+3、夜市人流量大。
+4、生活条件追求，大众化追求健康饮食。
+
+第二：技术与设备
+1、产品制作简单。
+2、设备前期支出不多。
+
+第三：市场运营
+1、互联网+实体。
+2、拓展式（后期投资可以进）。
+
+第四：人员管理
+1、资金足（机构培训）、招人（否则亲自教学）。
+2、夜市（晚上运营、必须每天运营、除台风等特殊外）。
+
+第五：营业估算（元）
+1、最低10一份*30人流量（300）
+2、一年300*30*12（10800）
+3、如果按照最低标准保证盈利。
+以上是最低人流量标准，不代表实际。
+
+author：czy

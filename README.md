@@ -48,8 +48,7 @@ czy study Machine Learning and deepLearning
 
 #### Python 相关推荐
     (scrapy 官网)[https://scrapy.org/]
-
-    (scrapy 中文教程)[https://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html]
+    (scrapy github)[https://github.com/scrapy/scrapy]
 
 
 ## 如果喜欢，支持一下哈
