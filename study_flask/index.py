@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Web服务器使用一种名为Web服务器网关接口（Web Server Gateway Interface，WSGI）的协议，
 # 把接收自客户端的所有请求都转交给这个对象处理。
 
-#获取数据库
+# 获取数据库
 mysql = db_init.MySQLDB(app)
 def get_db():
     return mysql.connection.cursor()
@@ -20,16 +20,6 @@ def get_db():
 @app.route("/",methods = ["GET"])
 # 像index()这样的函数称为视图函数（view function）。
 def index():
-
-    # mysql test
-    cur = get_db()
-    cur.execute('select id, name from user order by id desc')
-    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-    print("==== mysql test staet ====")
-    print(entries)
-    print("==== mysql test end ====")
-
-
     # Flask 提供的 render_template 函数把 Jinja2 模板引擎集成到了程序中。
     return render_template('index.html')
 
@@ -37,10 +27,29 @@ def index():
 
 # 动态路由。
 # Flask支持在路由中使用int、float和path类型。path类型也是字符串，但不把斜线视作分隔符，而将其当作动态片段的一部分。
-@app.route('/user/<name>')
-def user(name):
-    return '<h1>Hello, %s!</h1>' % name
+@app.route("/user",methods = ["GET"])
+def user():
+    # mysql test
+    cur = get_db()
+    cur.execute('select id, name from user')
+    entries = [dict(id=row[0], name=row[1]) for row in cur.fetchall()]
+    return '<h1>Hello,数据库查询结果： %s</h1>' % entries
 
+
+@app.route('/user/<id>')
+def userById(id):
+    print(id)
+    # mysql test
+    cur = get_db()
+    if(id):
+        cur.execute('select id, name from user where id ='+id)
+    else:
+        cur.execute('select id, name from user')
+    entries = [dict(id=row[0], name=row[1]) for row in cur.fetchall()]
+    print("==== mysql test staet ====")
+    print(entries)
+    print("==== mysql test end ====")
+    return '<h1>Hello,数据库查询结果： %s</h1>' % entries
 
 
 
