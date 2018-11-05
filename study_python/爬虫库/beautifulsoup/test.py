@@ -10,4 +10,4 @@ def getCrawlContentByUrl(url):
     return soup
 
  
-print(getCrawlContentByUrl("http://www.xicidaili.com/nn/"))
+print(getCrawlContentByUrl("https://cuiqingcai.com/1319.html"))

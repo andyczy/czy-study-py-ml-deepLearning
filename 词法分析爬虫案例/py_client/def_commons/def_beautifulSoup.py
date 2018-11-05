@@ -2,7 +2,7 @@
 # chenzy python
 import requests 
 from bs4 import BeautifulSoup
- 
+
 # 采集模块 BeautifulSoup 使用方法: https://cuiqingcai.com/1319.html
 def getCrawlContentByUrl(url):
     response = requests.get(url)
@@ -10,6 +10,6 @@ def getCrawlContentByUrl(url):
     return soup
 
  
-print(getCrawlContentByUrl("http://www.home898.com/zixun/1800131404.html"))
-
- 
+# soup = getCrawlContentByUrl("http://www.home898.com/")
+# content = soup.select('.pro')
+# print(content)
