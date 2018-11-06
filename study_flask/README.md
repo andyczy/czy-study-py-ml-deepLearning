@@ -7,7 +7,7 @@ Flask显著的特点是：它是一个“微”框架。”微”意味着Flask�
 默认情况下，Flask 不包含数据库抽象层、表单验证，或是其它任何已有多种库可以胜任的功能。
 然而，Flask 支持用扩展来给应用添加这些功能。众多的扩展提供了数据库集成、表单验证、上传处理、各种各样的开放认证技术等功能。
 Flask的这些特性，使得它在Web开发方面变得非常流行。
-
+http://www.pythondoc.com/flask-sqlalchemy/quickstart.html#quickstart
 # 安装记录
     pip install flask
     pip install flask-sqlalchemy
