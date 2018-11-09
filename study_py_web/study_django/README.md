@@ -4,7 +4,12 @@
 # Django  简介
 https://docs.djangoproject.com/
 
- 
+
+django-admin startproject mysite    
+python manage.py runserver      
+
+
+
 
 # 如果喜欢，支持一下哈
     Author: chenzhengyou
