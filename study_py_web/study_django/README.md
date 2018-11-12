@@ -13,8 +13,10 @@ https://docs.djangoproject.com/
 创建应用
     python manage.py startapp polls
 
-
-
+models
+    python manage.py makemigrations polls       创建对象
+    python manage.py migrate                    迁移
+    python manage.py sqlmigrate app名称 文件id   查看sql语句
 
 # 如果喜欢，支持一下哈
     Author: chenzhengyou
