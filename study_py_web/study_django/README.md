@@ -6,6 +6,8 @@ https://docs.djangoproject.com/
 
 创建项目
     django-admin startproject mysite    
+
+运行项目
     python manage.py runserver          
 
 创建应用
