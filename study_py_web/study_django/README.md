@@ -18,6 +18,11 @@ models
     python manage.py migrate                    迁移
     python manage.py sqlmigrate app名称 文件id   查看sql语句
 
+创建超级用户
+     python manage.py createsuperuser   
+     admin  czy123456   
+
+
 # 如果喜欢，支持一下哈
     Author: chenzhengyou
     mail: 649954910@qq.com
