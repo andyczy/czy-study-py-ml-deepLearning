@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+# urls.py：URL配置
 
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 
-# 自动生成的
+
 # from django.contrib import admin
 # from django.urls import path
 

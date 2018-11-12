@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+# 视图层
 # Create your views here.
 from django.http import HttpResponse
 

@@ -4,9 +4,12 @@
 # Django  简介
 https://docs.djangoproject.com/
 
+创建项目
+    django-admin startproject mysite    
+    python manage.py runserver          
 
-django-admin startproject mysite    
-python manage.py runserver      
+创建应用
+    python manage.py startapp polls
 
 
 
