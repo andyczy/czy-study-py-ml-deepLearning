@@ -36,7 +36,7 @@
 
 
 #  仓库声明：
-    本项目数据信息来源：海南房产网[http://www.home898.com]
+    本项目数据信息来源：海南房产网[http://www.home898.com]、如有违规请联系我、马上删除本库！
 
 # 如果喜欢，支持一下哈
     Author: chenzhengyou
