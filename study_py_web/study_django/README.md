@@ -13,6 +13,9 @@ https://docs.djangoproject.com/
 创建应用
     python manage.py startapp polls
 
+Django shell    
+    python manage.py shell     
+
 models
     python manage.py makemigrations polls       创建对象
     python manage.py migrate                    迁移
