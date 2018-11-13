@@ -1,0 +1,145 @@
+# 主要是写一些 TensorFlow 经常用到的东西
+import tensorflow as tf
+
+tf.multiply(a,b)    a * b       
+tf.add(a,b)         a + b       
+tf.cast(x,dtype,name = None)   类型转换     
+tf.ones(shape,dtype)  tf.zeros(shape,dtype)  指定类型与性质的 1/0 值        
+tf.ones_like(input_tensor)  tf.zeros_like(input_tensor) 指定 input_tensor 形状和类型的 1/0      
+tf.fill(shape,value)  将 value 填进 shape       
+tf.constant(value,shape) 生成常量       
+tf.random_normal(shape,mean = 0.0,stddev = 1.0)         
+tf.truncated_normal(shape,nean = 0.0,stddev = 1.0)      
+tf.set_random_seed(seed)  设置随机种子      
+tf.linspace(start,stop,num,name = None) 生成从 start 至 stop 的 num 个等差数列      
+tf.range(start,limit,delta = 1) 生成从 start 到 limit 的增量为 delta 的等差数列             
+       
+tf.shape(x)  返回 x 的shape         
+tf.size(x)   返回 x 的元素个数               
+tf.rank(x)   返回 x 的阶         
+tf.reshape(input,shape,name = None) 将 input reshape         
+tf.expand_dims(input,dim,name = None)  在 dim 维度将 input 扩展一维         
+tf.squeeze(input,dim,name = None)  将 dim 指定的维度去掉         
+          
+tf.slice(input,begin,size,name = None)  切片操作,begin 指定维度偏移位置，size 指定对应维度切片数目         
+tf.split(value,num_or_size_splits,axis = 0) 沿着 axis 轴分割input （axis = 0 表示列，1 表示行）         
+tf.concat([t1,t2],values,name = 'concat')   将 t1,t2 按照指定的维度拼接,不改变维度数量         
+tf.stack([t1,t2],axis = 0)  按 axis 轴将 t1,t2 两个 N 维张量组合成 N+1 维张量         
+tf.gather(params,indices)   合并索引 indices 所指示 params 中的切片         
+tf.count_nonzero(input_tensor,axis = None) 统计非零个数         
+          
+tf.assign(x,y,name = None)   赋值 x = y
+tf.subtract(x,y,name = None) x - y
+tf.divide(x,y,name = None)   除法
+tf.mod(x,y,name = None)      求模
+tf.abs(x,name = None)        绝对值
+tf.negative(x,name = None)   取反
+tf.sign(x,name = None)       符号函数
+tf.square(x,name = None)     求平方
+tf.round(x,name = None)      最近整数
+tf.sqrt(x,name = None)       开根号
+tf.pow(x,y,name = None)      求幂函数
+tf.exp(x,name = None)        e 指数
+tf.log(x,name = None)        ln 函数，两输入以第二个输入为底
+tf.maximum(x,y,name = None)  返回最大值 x>y?x:y
+tf.minimum(x,y,name = None)  返回最小值
+ 
+tf.diag(diagonal,name = None)  生成对角矩阵
+tf.diag_part(input,name = None) 与上面相反
+tf.trace(x,name = None)     求对角值 diagonal 之和
+tf.transpose(a)             转置矩阵
+tf.reverse(tensor,dims,name = None)   沿着 dims 指定的维度列表进行反转
+tf.matmul(x,y)              矩阵乘法
+tf.matrix_determinant(input,name = None)   求给定方阵的行列式
+tf.matrix_inverse(input,name = None)       求方阵的逆矩阵
+ 
+tf.reduce_sum(input_tensor,axis = None) 按照 axis 轴计算输入 tensor 的元素之和
+tf.reduce_prod(...)                     求积
+tf.reduce_min  tf.reduce_max tf.reduce_mean
+tf.reduce_all(input_tensor,axis = None) 按照 axis 轴计算输入的逻辑 与
+tf.recude_any(input_tensor,axis = None) 按照 axis 轴计算输入的逻辑 或
+ 
+tf.argmin(input,axis,name = None)     按axis 轴返回最小值索引
+tf.argmax(input,axis,name = None)     按axis 轴返回最大值索引
+tf.setdiffld(x,y,name = None)         返回 x,y 中不同值的索引
+tf.where(condition,x,y)               condition 对应为True，返回对应 x 中的元素，否则返回对应 y 中的元素
+tf.unique(x,name = None)              y,idx = tf.unique([0,0,1,3]) y = [0,1,3] idx = [0,0,1,2]
+tf.invert_permutation(x,name = None)  将 x 中的值作为索引返回对应值
+tf.random_shuffle(input)              沿着 input 的第一维进行随机重新排列
+ 
+# 指定GPU 、CPU 因为TensorFlow 只会使用第一个，其他的默认不参与运算
+with tf.device('/gpu:1'):
+	add = tf.add(a,b)
+	sess.run(...)
+ 
+-----------------------------------------------------------------------	
+'''通过 tf.ConfigProto 分配 GPU计算资源'''
+config = tf.ConfigProto(log_device_placement = True,allow_soft_placement = True)
+'''gpu 按需分配资源'''
+config.gpu_options.allow_growth = True or gpu_options = tf.GPUOptions(allow_growth = True)
+'''固定资源比例'''
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction =  0.7)
+config = tf.ConfigProto(gpu_options = gpu_options)
+with tf.Session(config = config):
+	xxx
+-----------------------------------------------------------------------
+ 
+-----------------------------------------------------------------------
+# 保存和加载模型
+saver = tf.train.Saver()
+with tf.Session() as sess:
+	sess.run(tf.global_variables_initializer())
+	xxx
+	saver.save(sess,"save_path.cpkt")
+with tf.Session() as sess:
+	# 可以初始化也可以不初始化变量，初始化后也会被 restore 覆盖
+	saver.restore(sess,"save_path.cpkt")
+ 
+# 打印保存的内容
+from tensorflow.python.tools.inspect_checkpoint import print_tensors_in_checkpoint_file
+print_tensors_in_checkpoint_file("save_path.cpkt",None,True)
+# 检查点 加入 max_to_keep 设置保存最大个数,同时传入训练轮数
+saver = tf.train.Saver(max_to_keep = 2)
+with tf.Session() as sess:
+	...
+	saver.save(sess,"save_path.cpkt",global_step = epoch)
+# 加载的时候指定加载轮次
+with tf.Session() as sess2:
+	saver.restore(sess2,"save_path.ckpt-" + str(load_epoch))
+	
+''' 如果觉得指定迭代轮数比较麻烦，还可以这样快速加载模型'''
+kpt = tf.train.latest_checkpoint(save_dir):
+	if kpt != None:saver.restore(sess,kpt)
+-----------------------------------------------------------------------
+ 
+# TensorBoard 可视化
+tf.summary.scalar(tags,value)   # 标量数据汇总
+tf.summary.histogram(tag,value) # 直方图汇总
+tf.summary.image(tag,tensor)    # 图像数据汇总
+tf.summary.merge(inputs)        # 合并所有的汇总日志
+tf.summary.FileWriter           # 创建一个 FileWriter
+ 
+代码片段 ...
+...
+z = tf.multiply(X,W) + b
+tf.summary.histogram('z',z)     # 预测值以直方图展示
+cost = tf.reduce_mean(tf.square(Y-z))
+tf.summary.scalar("loss",cost)  # 将损失以标量形式表示
+with tf.Session() as sess:
+	sess.run(init)
+	# 合并所有 summary
+	merged_summary_op = tf.summary.merge_all()
+	# 创建 FileWriter
+	summary_writer = tf.summary.FileWriter('log/mnist_with_summaries',sess.graph)
+	# 向模型中输入数据
+	for epoch in range(20):
+		for (x,y) in zip(X_train,Y_train):
+			sess.run(train_op,feed_dict = {X:x,Y:y})
+		# 每一轮生成一个 summary
+		summary_str = sess.run(merged_summary_op,feed_dict = {X:x,Y:y})
+		summary_writer.add_summary(summary_str,epoch)
+		...
+# 此时会在 log/mnist_with_summaries 生成一个文件
+cd log 执行
+tensorboard --logdir mnist_with_summaries  
+即可在浏览器输入 http://ip:6006 查看可视化
