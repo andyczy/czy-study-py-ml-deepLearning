@@ -3,7 +3,7 @@
 czy study Machine Learning and deepLearning
 
 ## 网络整理 TensorFlow 知识点
-[1、TensorFlow 基础](基础.md)               
+[1、TensorFlow 基础](note-book/md/基础.md)               
 [2、TensorFlow 变量共享、图的操作](note-book/md/变量共享、图的操作.md)           
 [3、TensorFlow 分布式TensorFlow](note-book/md/分布式TensorFlow.md)           
 [4、TensorFlow 激活函数，损失函数，优化方法 & Maxout 神经网络](note-book/md/激活函数、神经网络.md)       
