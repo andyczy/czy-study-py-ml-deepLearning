@@ -6,9 +6,9 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"]='2' # 只显示 warning 和 Error
 os.environ["TF_CPP_MIN_LOG_LEVEL"]='3' # 只显示 Error  
 
 import tensorflow as tf
-from tensorflow.examples.tutorials.mnist import input_data
 
 #载入数据集
+from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data",one_hot=True)
 
 #每个批次的大小
