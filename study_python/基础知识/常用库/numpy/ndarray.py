@@ -3,22 +3,22 @@
 import numpy as  np
 
 # numpy资料：https://docs.scipy.org/doc/numpy/user/whatisnumpy.html
-# NumPy是Python中科学计算的基础包。它是一个Python库，提供多维数组对象，各种派生对象（如掩码数组和矩阵），以及用于数组快速操作的各种例程，包括数学，逻辑，形状操作，排序，选择，I / O离散傅立叶变换，基本线性代数，基本统计运算，随机模拟等等。
+# NumPy是Python中科学计算的基础包。它是一个Python库，提供多维数组对象，各种派生对象（如掩码数组和矩阵），以及用于数组快速操作的各种例程，
+# 包括数学，逻辑，形状操作，排序，选择，I / O离散傅立叶变换，基本线性代数，基本统计运算，随机模拟等等。
 
-# NumPy 中定义的最重要的对象是称为 ndarray 的 N 维数组类型。 
-# 它描述相同类型的元素集合。 可以使用基于零的索引访问集合中的项目。
+# NumPy 中定义的最重要的对象是称为 ndarray 的 N 维数组类型。它描述相同类型的元素集合。 可以使用基于零的索引访问集合中的项目。
 
 # ndarray 对象由计算机内存中的一维连续区域组成，带有将每个元素映射到内存块中某个位置的索引方案。 
 # 内存块以按行(C 风格)或按列(FORTRAN 或 MatLab 风格)的方式保存元素。
 
 data=np.array([2,5,6,8,3]) #构造一个简单的数组
 print(data)
+print(data.shape)
+print(data.dtype)
 
 data1=np.array([[2,5,6,8,3],np.arange(5)])  #构建一个二维数组
 print(data1)
 # 我们也可以通过shape和dtype方法查看数组的维度和数据格式
-print(data.shape)
-print(data.dtype)
 print(data1.shape)
 print(data1.dtype)
 

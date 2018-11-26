@@ -7,6 +7,8 @@ hmac         验证算法有效性
 itertools    操作迭代对象的函数
 contectlib   资源关闭
 urllib       提高URL操作
+
+
 ————> requests
 xml          操作xml
 HTMLParser   解析html
