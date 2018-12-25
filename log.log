@@ -1,0 +1,10 @@
+2018-12-25 14:24:26,415 : DEBUG : debug message
+2018-12-25 14:24:26,415 : INFO : info message
+2018-12-25 14:24:26,415 : WARNING : warn message
+2018-12-25 14:24:26,415 : ERROR : error message
+2018-12-25 14:24:26,416 : CRITICAL : critical message
+2018-12-25 14:27:17,497 : DEBUG : debug message
+2018-12-25 14:27:17,497 : INFO : info message
+2018-12-25 14:27:17,497 : WARNING : warn message
+2018-12-25 14:27:17,497 : ERROR : error message
+2018-12-25 14:27:17,498 : CRITICAL : critical message
