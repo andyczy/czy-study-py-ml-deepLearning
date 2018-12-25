@@ -4,18 +4,16 @@ czy study Machine Learning and deepLearning
 
 ## 本库初衷
 
-    1、对技术的兴趣；
+    1、对Python技术的兴趣；记录学习Python知识；
 
-    2、记录学习研究的方向NLP（自然语言处理）、tensorflow框架的笔记；
+    2、记录研究学习的方向NLP（自然语言处理）、tensorflow框架的笔记；
 
-    3、记录学习Python知识；
-
-    4、记录学习机器、深度学习算法。
+    3、记录学习机器、深度学习算法。
 
 ## 目录介绍
 
     1、study_python                       学习Python知识点                    [开始时间：2017-12-22]         继续学习
-    2、study_py_web                       python web框架                     [开始时间：2018-08-12]          继续学习
+    2、study_py_web                       学习python web框架                  [开始时间：2018-08-12]         继续学习
     3、study_py_spider                    学习scarpy爬虫框架                  [开始时间：2018-09-03]          继续学习
     4、study_deep_learning_ml             学习NLP、机器、深度学习算法相关       [开始时间：2018-07-13]          继续学习
 

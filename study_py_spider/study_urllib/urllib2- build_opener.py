@@ -1,6 +1,5 @@
 import urllib.request
 import http.cookiejar
-import saveFile
 
 # 方法使用了 build_opener 这个方法, 用来自定义 opener, 这种方法的好处是可以方便的拓展功能,
 # 例如下面的代码就拓展了自动处理 Cookies 的功能.
