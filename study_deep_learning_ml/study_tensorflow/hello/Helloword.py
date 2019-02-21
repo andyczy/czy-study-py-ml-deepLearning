@@ -7,10 +7,10 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"]='3' # 只显示 Error
 import tensorflow as tf
 
 hello = tf.constant('Hello, TensorFlow!')
-#
-# strh = sess.run(hello)
-# # b'Hello, TensorFlow!'
-# print("常量：",strh)
+ccc = tf.Session()
+strh = ccc.run(hello)
+# b'Hello, TensorFlow!'
+print("常量：",strh)
 
 a = tf.constant(10)
 b = tf.constant(32)
