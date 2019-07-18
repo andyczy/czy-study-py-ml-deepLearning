@@ -14,4 +14,3 @@ class CnblogjobSpider(scrapy.Spider):
         item['name'] = response.xpath('//div[@class="post_item_foot"]/a/text()').extract()
 
         yield item
-
